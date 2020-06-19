@@ -1,0 +1,54 @@
+<html lang="ie">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155199982-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155199982-1');
+        </script>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+        <title>Tur de Rust - Li Operator *</title>
+        <link rel="stylesheet" href="tour.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/styles/pojoaque.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    </head>
+    <body>
+        <div class="tour">
+            <div class="header">
+                <span class="title"><a href="index_ie.html">Tur de Rust</a></span>
+                <span class="nav">
+                <span class="toc"><a href="TOC_ie.html">Tabelle de contenete</a></span>
+            </div>
+            <div class="page">
+            <h1>Li Operator *</h1>
+            <p>Li operator <code>*</code> es un metode explicit por dereferentiar un referentie.</p>
+<pre><code class="rust language-rust">let a: i32 = 42;
+let ref_ref:ref_a: &amp;&amp;&amp;i32 = &amp;&amp;&amp;a;
+let ref_a: &amp;i32 = **ref_ref_ref_a;
+let b: i32 = *ref_a;
+</code></pre>
+<p>Detallies pri memorie:</p>
+<ul>
+<li>Nam i32 es un tip primitiv quel implementa li trate Copy, li bytes del variabil <code>a</code>
+sur li stack es copiat ad-in li bytes de variabil <code>b</code>.</li>
+</ul>
+            <div class="bottomnav">
+                <span class="back"><a href="92_ie.html">❮ Precedent</a></span>
+                <span class="next"><a href="94_ie.html">Sequent ❯</a></span>
+            </div>
+            </div>
+            <div class="code"><center><br><br><br><br><br><img src="ferris.png"><br><br><br><br><br></center></div>
+        </div>
+    </body>
+    <script src="/tour.js"></script>
+</html>

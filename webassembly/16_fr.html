@@ -1,0 +1,52 @@
+<html lang="fr">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155199982-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155199982-1');
+        </script>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+        <title>Tour de WebAssembly - Découverte des représentations</title>
+        <link rel="stylesheet" href="tour.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.0.3/build/styles/pojoaque.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    </head>
+    <body>
+        <div class="tour">
+            <div class="header">
+                <span class="title"><a href="index_fr.html">Tour de WebAssembly</a></span>
+                <span class="nav">
+                <span class="toc"><a href="TOC_fr.html">Table des Matières</a></span>
+            </div>
+            <div class="page">
+            <h1>Découverte des représentations</h1>
+            <p>Il est possible que tu trouves cela pénible de devoir passer la taille des données
+en mémoire ainsi que l'index de début de celles-ci.</p>
+<p>Ne pourrions-nous pas ruser pour échanger une structure donnée de manière simple
+sans devoir passer chaque champs un à un? Pense au chaînes de caractères du C
+(en anglais * C strings *) qui déclare la fin du texte avec le caractère <code>\0</code>.</p>
+<p>Tu l'as peut-être déjà à l'esprit, mais nous pouvons utiliser le json! Ce n'est ni plus ni
+moins qu'une chaîne de caractères et tu sais déjà comment échanger ce type de donnée! </p>
+<p>N'oublie pas que tu as le contrôle sur la représentation mémoire des données et
+c'est donc à toi de choisir celle qui te simplifie le travail.</p>
+            <div class="bottomnav">
+                <span class="back"><a href="15_fr.html">❮ Précédant</a></span>
+                <span class="next"><a href="17_fr.html">Suivant ❯</a></span>
+            </div>
+            </div>
+            <div class="code"><center><br><br><br><br><br><img src="ferris.png"><br><br><br><br><br></center></div>
+        </div>
+    </body>
+    <script src="/tour.js"></script>
+</html>
